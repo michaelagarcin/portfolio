@@ -1,0 +1,265 @@
+/*the styles for the whole page*/
+html {
+    background-color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/* the styles for the body */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 98%;
+    max-width: 960px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+
+/* the styles for the header */
+header {
+    border-bottom: 3px solid #931420;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    background-image: -webkit-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+header img {
+	float: left;
+    padding-left: 3.75%;
+    padding-right: 3.75%;
+}
+header h2 {
+    font-size: 170%;
+    color: #800000;
+}
+header h3 {
+    font-size; 130%;
+    font-style: italic;
+}
+.shadow {
+    text-shadow: 1px 1px 4px #800000;
+}
+/* the styles for the mobile menu */
+#mobile_menu {
+    display: none; 
+}
+/* the styles for the top nav bar */
+#nav_menu {
+    position: relative;
+}
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu ul li a.current {
+    color: yellow;
+}
+/* the styles for the submenus */
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+#nav_menu ul ul li {
+    float: none;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* the styles for the main */
+main {
+	clear: left;
+    /*padding-left: 30px;
+    padding-right: 30px;*/
+}
+/*main h1 {   
+    font-size: 150%;
+    border: double #931420;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 0;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    padding-left: .3em;
+}*/
+main p {
+    padding-bottom: 0.5em;
+}
+main blockquote {
+    padding-right: 2em;
+    padding-left: 2em;
+    font-style: italic;
+}
+main ul {
+    padding-bottom: .25em;
+    padding-left: 1.25em;
+    list-style-type: circle;
+}
+main li {
+    padding-bottom: .35em;
+}
+a:hover, a:focus {
+    font-style: italic;
+}
+/*the styles for the section*/
+section {
+    width: 65.25%;
+    float: right;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 20px;
+}
+section h2 {
+    font-size: 130%;
+    color: #800000;
+    padding-top: 0.5em;
+    padding-bottom: 0.25em;
+}
+section h1 {
+    font-size: 150%;
+    padding-top: 0.5ems;
+    padding-bottom: 0.5ems;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*the styles for the luncheons table*/
+table {
+	margin: 0px;
+}
+thead, tfoot {
+	font-weight: bold;
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+}
+th, td {
+	padding: .2em .7em;
+	text-align: left;
+}
+th.left, td.left {
+    text-align: center;
+}
+th.right, td.right {
+    text-align: right;
+}
+td.savings {
+    text-align: right;
+}
+td.cost {
+    font-weight: bold;
+    text-align: right;
+}
+tr.last {
+    border-bottom: 2px solid #800000;
+}
+/*the styles for the article*/
+article {
+    padding-top: 0.5ems;
+    padding-bottom: 0.5ems;
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+}
+article img {
+    float: right;
+    border: 1px solid black;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 0em;
+    max-width: 40%;
+    min-width: 150px;
+}
+article h2 {
+    padding-top: 0;
+}
+article h3 {
+    font-size: 105%;
+    padding-bottom: 0.25ems;
+}
+/*the styles for the aside*/
+aside {
+    width: 26.875%;
+    float: float;
+    padding-left: 2.5%;
+    padding-bottom: 20px;
+}
+aside h2 {
+    font-size: 130%;
+    color: #800000;
+    padding-top: 0.5em;
+    padding-bottom: 0.25em;
+}
+aside h3 {
+    font-size: 105%;
+    padding-bottom: 0.25em;
+}
+aside img {
+    padding-bottom: 1em;
+}
+/* the styles for the footer */
+footer {
+    clear: right;
+    background-color: #931420;
+    border-top: 3px solid #931420;
+    border-bottom: 3px solid #931420;
+    color: white;
+}
+footer p{
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+/* media queries */
+/* tablet portrait */
+@media only screen and (max-width: 959px) {
+    section h1 { font-size: 135%; }
+    section h2, aside h2 { font-size: 120%; }
+}
+/* mobile landscape */
+@media only screen and (max-width: 767px) {
+    header img { float: none; }
+    header { text-align: center; }
+    section { 
+        float: none;
+        width: 95%; }
+    aside { 
+        float: none;
+        padding-right: 2.5%;
+        width: 95%; 
+        }
+    #speakers { 
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2; }
+    article img { max-width: 30% }
+    #nav_menu { display: none; }
+    #mobile_menu { display: block; }
+    .slicknav_menu { background-color: #800000 !important; }
+}
+/* mobile portrait */
+@media only screen and (max-width: 479px) {
+    body { font-size: 90%; }
+}

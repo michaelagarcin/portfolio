@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Michael A. Garcin Resume</title>
+  <meta name="description" content="This is the electronic resume of Michael Andrew Garcin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/png" href="img/logo.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <script src="https://kit.fontawesome.com/09fca17878.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<section class="body">
+  <header class="container">
+    <img src="img/logo.png" alt="mag logo">
+    <!-- Main navigation -->
+    <nav class="primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education" class="last">Education</a>
+    </nav>
+    <section class="intro">  
+      <h1 class="title">Michael Garcin</h1>
+      <p class="description" itemprop="description">Web development and design student seeking an internship opportunity to gain some hands-on experience in the web development field.</p>
+    </section>
+  </header>
+  <!-- Main -->
+  <main itemscope itemtype="http://schema.org/Person" class="container">
+    <section id="about">
+      <img itemprop="image" src="img/resume-pic2.jpg" alt="Michael A. Garcin">
+      <h2 id="intro">Get to know me</h2>
+      <dl>
+        <dt>Name</dt>
+        <dd itemprop="name">
+          <span itemprop="givenName">Michael</span> <span itemprop="familyName">Garcin</span>
+        </dd>
+        <dt>Date of birth</dt>
+        <dd itemprop="birthDate"><time datetime="1976-10-12">11/09/1994</time></dd>
+        <dt>Nationality</dt>
+        <dd itemprop="nationality">American</dd>
+        <dt>Location</dt>
+        <dd itemprop="homeLocation">Arkansas</dd>
+        <dt>Telephone</dt>
+        <dd>
+          <a itemprop="telephone" href="tel:318.751.1509">318.751.1509</a>
+        </dd>
+        <dt>Email</dt>
+        <dd>
+          <a itemprop="email" href="mailto:michaelagarcin@gmail.com">michaelagarcin@gmail.com</a>
+        </dd>
+        <dt>Address</dt>
+
+        <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">501 Napa Valley Dr, Apt 1217</span>
+          <span itemprop="addressLocality">Little Rock</span>
+          <span itemprop="postalCode">72211</span>
+          <span itemprop="addressCountry">USA</span>
+        </dd>
+
+      </dl>
+      <ul class="related-links">
+        <li><a itemprop="url" rel="me" href="https://github.com/michaelagarcin"><i class="fab fa-github"></i>github</a></li>
+        <li>
+            <a itemprop="url" rel="me" href="https://www.linkedin.com/in/michael-garcin-8446061a0"><i class="fab fa-linkedin-in"></i> linkedin</a>
+        </li>
+        <li>
+            <a itemprop="url" href="doc/resume.pdf" download><i class="far fa-file-pdf"></i> pdf resume</a></li>
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li class="skill">HTML5</li>
+        <li class="skill">CSS3</li>
+        <li class="skill">C++</li>
+        <li class="skill">Adobe Creative Cloud</li>
+      </ul>
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <!-- current job -->
+      <article class="job">
+        <h3 itemprop="jobTitle">Pharmacy Technician</h3>
+        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <span itemprop="name">Walgreens</span>
+          <span>February 2014 - Present</span>
+          <p itemprop="description">Intake, fill, and dispense patient’s medication, as well as handle all billing to insurance</p>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <a itemprop="url" href="https://www.walgreens.com/">www.walgreens.com</a>
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="addressLocality">Little Rock, AR</span>
+          </span>
+          </span>
+        </div>
+      </article>
+      <!-- Previous Jobs - Notice Slightly Different Format-->
+      <article class="job" itemscope itemtype="http://schema.org/Event/Job">
+        <h3 itemprop="name">Customer Service Associate</h3>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <span itemprop="name">Brookshires</span>
+          <a itemprop="url" href="https://www.brookshires.com/">www.brookshires.com</a>
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality">Minden, LA</span>
+          </span>
+          </span>
+          <span itemprop="startDate" content="2006-02-21T20:00">December 2013</span>
+          <span itemprop="endDate" content="2009-02-21T20:00">October 2014</span>
+        <p itemprop="description">Maintain inventory and assist customers in locating product</p>
+      </article>
+      <!--<article class="job" itemscope itemtype="http://schema.org/Event/Job">
+        <h3 itemprop="name">Web Developer</h3>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <span itemprop="name">Company Name 2</span>
+          <a itemprop="url" href="http://link-to-company.com">Company URL</a>
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality">Anywhere, USA</span>
+          </span>
+          </span>
+          <span itemprop="startDate" content="2004-01-21T20:00">January 2004</span>
+          <span itemprop="endDate" content="2006-02-21T20:00">February 2006</span>
+        <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+      </article>-->
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+        <h3 itemprop="description"><abbr title="Bachelor of Arts">BA</abbr> Web Design and Development</h3>
+          <span itemprop="name">University of Arkansas at Little Rock</span>
+          <span itemprop="location" itemscope>Little Rock, AR</span>
+          <span>2019-Present</span>
+      </article>
+      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+        <h3 itemprop="description"><abbr title="Bachelor of Science">BS</abbr> Toxicology</h3>
+          <span itemprop="name">University of Louisiana at Monroe</span>
+          <span itemprop="location" itemscope>Monroe, LA</span>
+          <span>2013-2017</span>
+      </article>
+    </section>
+  </main>
+</section>    
+  <!-- Footer -->
+  <footer class="container">
+    <div id="copyright">
+      &copy; Michael A. Garcin. All rights reserved.
+    </div>
+  </footer>
+  <!--js stuff-->
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
